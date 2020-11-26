@@ -15,10 +15,6 @@ namespace AppMvcBasica.Data
         }
 
         // Mapear propriedades, recomendado apenas quando há uma camada
-        public DbSet<Produto> Produtos { get; set; }
-        public DbSet<Fornecedor> Fornecedores{ get; set; }
-        public DbSet<Endereco> Enderecos{ get; set; }
-
         public DbSet<Tarefa> Tarefas { get; set; }
     }
 }

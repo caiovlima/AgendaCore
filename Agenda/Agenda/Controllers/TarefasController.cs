@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using AppMvcBasica.Data;
 using AppMvcBasica.Models;
 
-namespace AppMvcBasica.Controllers
+namespace Agenda.Controllers
 {
     public class TarefasController : Controller
     {
@@ -54,7 +54,7 @@ namespace AppMvcBasica.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Titulo,HoraInicio,HoraFim,Data,Id")] Tarefa tarefa)
+        public async Task<IActionResult> Create([Bind("Titulo,DataInicio,DataFim,Id")] Tarefa tarefa)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace AppMvcBasica.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Titulo,HoraInicio,HoraFim,Data,Id")] Tarefa tarefa)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Titulo,DataInicio,DataFim,Id")] Tarefa tarefa)
         {
             if (id != tarefa.Id)
             {

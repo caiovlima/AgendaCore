@@ -4,10 +4,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Tarefas</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Criar Nova Tarefa</a>
 </p>
 <table class="table">
     <thead>
@@ -17,16 +17,12 @@
                 Título
             </th>
             <th>
-                @*@Html.DisplayNameFor(model => model.HoraInicio)*@
-                Hora Iníco
+                @*@Html.DisplayNameFor(model => model.DataInicio)*@
+                Data Inícios
             </th>
             <th>
-                @*@Html.DisplayNameFor(model => model.HoraFim)*@
-                Hora Fim
-            </th>
-            <th>
-                @*@Html.DisplayNameFor(model => model.Data)*@
-                Data Agendada
+                @*@Html.DisplayNameFor(model => model.DataFim)*@
+                Data Fim
             </th>
             <th></th>
         </tr>
@@ -38,18 +34,15 @@
                 @Html.DisplayFor(modelItem => item.Titulo)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.HoraInicio)
+                @Html.DisplayFor(modelItem => item.DataInicio)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.HoraFim)
+                @Html.DisplayFor(modelItem => item.DataFim)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Data)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Deletar</a>
             </td>
         </tr>
 }

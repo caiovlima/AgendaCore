@@ -4,7 +4,7 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Adicionar</h1>
 
 <h4>Tarefa</h4>
 <hr />
@@ -13,24 +13,19 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Titulo" class="control-label">Título</label>
+                <label asp-for="Titulo" class="control-label"></label>
                 <input asp-for="Titulo" class="form-control" />
                 <span asp-validation-for="Titulo" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label  asp-for="HoraInicio" class="control-label">Hora Início</label>
-                <input asp-for="HoraInicio" class="form-control" />
-                <span asp-validation-for="HoraInicio" class="text-danger"></span>
+                <label asp-for="DataInicio" class="control-label"></label>
+                <input asp-for="DataInicio" class="form-control" />
+                <span asp-validation-for="DataInicio" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="HoraFim" class="control-label">Hora Fm</label>
-                <input asp-for="HoraFim" class="form-control" />
-                <span asp-validation-for="HoraFim" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Data" class="control-label">Data de Agendamento</label>
-                <input asp-for="Data" class="form-control" />
-                <span asp-validation-for="Data" class="text-danger"></span>
+                <label asp-for="DataFim" class="control-label"></label>
+                <input asp-for="DataFim" class="form-control" />
+                <span asp-validation-for="DataFim" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
