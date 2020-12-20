@@ -86,10 +86,6 @@ To get a local copy up and running follow these simple steps.
 * [.Net Core](https://dotnet.microsoft.com/download)
 * Optional [VSCode](https://code.visualstudio.com/)
 
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
 * FYI: Some projects and frameworks maybe deprecated version.
 
 ### Installation
